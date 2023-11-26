@@ -43,3 +43,35 @@ revsorted
 theorder=order(f)
 theorder
 
+# to access documentation and information about functions or commands. 
+help(mean)
+?mean
+??mean
+
+assign("x",c(6,12,4))
+x
+y=c(x,0,x)
+y
+1/y
+
+sample_variance=sum((x-mean(x))^2)/(length(x)-1)
+sample_variance
+
+z=c('hi','go',TRUE,FALSE,88)
+z
+typeof(z)
+
+f=c(TRUE,FALSE)
+f
+typeof(f)
+
+d=c(5i,5+6i)
+d
+typeof(d)
+
+s=c(1,2,3,4)
+class(s)
+typeof(s)
+length(s)
+attributes(s)
+
