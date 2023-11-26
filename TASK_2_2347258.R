@@ -1,4 +1,3 @@
-
 #1.Create two matrices, matrix_A and matrix_B
 matrix_A=matrix(c(1,2,3,4,5,6,7,8,9),nrow=3,ncol=3,byrow=TRUE)
 matrix_A
@@ -19,7 +18,7 @@ matrix_mult=5*matrix_B
 matrix_mult
 
 # 5. Calculate the product of matrix_A and matrix_B
-matrix_product=matrix_A*matrix_B #or use matrix_A %*% matrix_B
+matrix_product= matrix_A %*% matrix_B
 matrix_product
 
 
@@ -37,13 +36,8 @@ matrix_B_inverse =solve(matrix_B)
 matrix_B_inverse
 
 # 9. Check if matrix_B is orthogonal
-orthogonal_check=all( matrix_B_inverse==determinant_B)
-
-if (orthogonal_check) {
-  print("Matrix B is orthogonal.")
-} else {
-  print("Matrix B is not orthogonal.")
-}
+is_orthogonal=all(round(t(matrix_B) %*% matrix_B, 6) == diag(ncol(matrix_B)))
+is_orthogonal
 
 # 10. Calculate the element-wise square root of matrix_A
 matrix_A_sqrt = sqrt(matrix_A)
@@ -70,5 +64,3 @@ second_row_A
 # 15. Extract the third column of matrix_B
 third_column_B = matrix_B[, 3]
 third_column_B 
-
-
