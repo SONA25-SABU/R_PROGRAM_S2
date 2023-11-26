@@ -3,11 +3,11 @@ sales_data=c(45,60,35,75,80,62,48,53,69,72,40,55)
 
 # 2. Calculate the total annual sales
 total_annual_sales=sum(sales_data)
-print(total_annual_sales)
+total_annual_sales
 
 # 3. Compute the monthly average sales
 monthly_average_sales=total_annual_sales/length(sales_data)
-print(monthly_average_sales)
+monthly_average_sales
 
 # 4. Determine the month with the highest and lowest sales
 highest_sales=max(sales_data)
@@ -21,7 +21,7 @@ lowest_sales_month=match(lowest_sales,sales_data)
 lowest_sales_month
 
 # 5. Increase the sales figure for the third month (March) by 10%
-sales_data[3]+sales_data[3]*.1
+sales_data[3]=sales_data[3]*.1
 
 # 6. Sort the sales_data vector in ascending order
 sorted_sales= sort(sales_data)
