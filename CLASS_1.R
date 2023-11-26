@@ -1,39 +1,40 @@
-vec1<- c(1,2,3,4,5,443,3)
-vec2<-c(FALSE,22,6.9,TRUE,"HH")
-typeof(vec1)
-typeof(vec2)
-vec1<- NULL
-vec2<- NULL
-vec1
+Vecl <- c(44, 25, 64, 96, 30) 
+Vec2 <- c(1, FALSE, 9.8, "hello world") 
+typeof (Vec1) 
+typeof (Vec2) 
+#To delete a vector 
+Vecl <- NULL 
+Vec2 <- NULL 
+Vec1
 
 
-
-x<-c("jan","feb","mar","april","MAY")
-# Subset by index/ Subset using numeric vector
-y <- x[c(3, 2)] # Select elements at index 3 and 2
-y
-z <- x[c(-3, -2)] # Exclude elements at index 3 and 2
+#TO Access Vector Elements 
+x=c("Jan", "Feb", "March", "Apr", "May", "June", "July") 
+w=x[c (3,2,7)] # Subset by index/ Subset using numeric vector
+y=x [c (TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, TRUE)] # Subset by logical vector(Logical indexing)
+z=x [c (-3, -7)] #negative indexing
+c=x [c (0,0,0,1,0,0,1)] #0/1 can also be used
+w
+y 
 z
-v <- x[c(2, 3, 1)] 
-v
-# Subset by logical vector
-a <- x[c(TRUE, FALSE)] # Selects elements where corresponding logical values are TRUE
-a
+c
 
 
-
-q1=c(1,2,3,45,5)
-q2=c(11,2,33,44,55)
-add=q1+q2
+#Vector Arithmetic 
+v1=c (4,6,7,31,45,7) 
+v2=c (54,1,10,86,14,57) 
+add=v1+v2 
 add
-sub=q2-q1
-sub
-mult=q1*q2
-mult
-div=q2/q1
-div
+sub=v1-v2 
+sub 
+multi=v1*v2 
+multi 
+divi=v1/v2 
+divi 
 
 
+
+#Sorting a Vector 
 f=c(656,34,5,-6,"so","jo")
 sorted=sort(f)
 sorted
@@ -42,3 +43,4 @@ revsorted
 theorder=order(f)
 theorder
 
+ 
