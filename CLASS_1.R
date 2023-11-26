@@ -1,9 +1,9 @@
-Vecl <- c(44, 25, 64, 96, 30) 
+Vec1 <- c(44, 25, 64, 96, 30) 
 Vec2 <- c(1, FALSE, 9.8, "hello world") 
-typeof (Vec1) 
+typeof(Vec1) 
 typeof (Vec2) 
 #To delete a vector 
-Vecl <- NULL 
+Vec1 <- NULL 
 Vec2 <- NULL 
 Vec1
 
@@ -43,4 +43,3 @@ revsorted
 theorder=order(f)
 theorder
 
- 
